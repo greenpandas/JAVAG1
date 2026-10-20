@@ -1,2 +1,18 @@
-<img width="3009" height="2268" alt="image" src="https://github.com/user-attachments/assets/108a5bd4-fcc5-44bb-85ac-51858e3282bd" />
+# Self Defence Academy Management System (SDAMS)
 
+## Team Members
+- Shaheer
+- Loai
+- Khalid
+- Mohammed
+- Ryan
+- Mashrur
+
+## Project Description
+Java Swing-based management system for a self-defence academy.
+
+## Technologies
+- Java
+- NetBeans
+- GitHub
+- Text File Storage
