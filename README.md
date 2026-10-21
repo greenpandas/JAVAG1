@@ -16,549 +16,321 @@ Java Swing-based management system for a self-defence academy.
 - NetBeans
 - GitHub
 - Text File Storage
-SDAMS Project Progress Summary (Week 1)
-Project Information
 
-Project Name: Self Defence Academy Management System (SDAMS)
+# Self Defence Academy Management System (SDAMS)
 
-Technology Stack:
+## Project Overview
 
-Java
-NetBeans
-Java Swing (later)
-Git & GitHub
-Text File Storage (No Database)
+The Self Defence Academy Management System (SDAMS) is a Java-based desktop application developed to manage the daily operations of a self-defence academy. The system enables efficient management of students, instructors, staff, attendance, bookings, payments, equipment, and facility-related issues.
 
-Duration: 6 Weeks
+This project is developed as part of a 6-week academic assignment using Object-Oriented Programming (OOP) principles and file-based data storage.
 
-What We Have Completed
-1. GitHub Repository Setup
+---
 
-Repository created:
+## Project Objectives
 
+- Manage student and staff records
+- Record attendance information
+- Manage class schedules and bookings
+- Track payments and transactions
+- Monitor academy equipment
+- Report and manage facility issues
+- Generate basic reports
+- Implement role-based user access
+
+---
+
+## Technology Stack
+
+- Java
+- NetBeans IDE
+- Java Swing (GUI)
+- Git & GitHub
+- Text File Storage (.txt)
+
+---
+
+## Project Structure
+
+```text
 SDAMS
-
-Repository connected successfully to local machine.
-
-Git was initialized and connected to:
-
-https://github.com/greenpandas/SDAMS.git
-
-Successfully learned basic Git workflow:
-
-git pull
-
-git status
-
-git add .
-
-git commit -m "message"
-
-git push
-
-2. Project Structure Created
-
-Current project structure:
-
-SDAMS
-
 │
-
 ├── data
-
-│   ├── attendance.txt
-
-│   ├── bookings.txt
-
-│   ├── classes.txt
-
-│   ├── equipment.txt
-
-│   ├── issues.txt
-
-│   ├── payments.txt
-
-│   ├── ratings.txt
-
-│   ├── staff.txt
-
-│   ├── students.txt
-
-│   └── users.txt
-
+│   ├── attendance.txt
+│   ├── bookings.txt
+│   ├── classes.txt
+│   ├── equipment.txt
+│   ├── issues.txt
+│   ├── payments.txt
+│   ├── ratings.txt
+│   ├── staff.txt
+│   ├── students.txt
+│   └── users.txt
 │
-
 ├── diagrams
-
 │
-
 ├── docs
-
 │
-
 ├── screenshots
-
 │
-
 ├── src
-
-│   │
-
-│   ├── model
-
-│   ├── gui
-
-│   ├── service
-
-│   ├── filehandling
-
-│   └── reports
-
+│   ├── model
+│   ├── gui
+│   ├── service
+│   ├── filehandling
+│   └── reports
 │
-
 └── nbproject
+```
 
-3. Packages Created
+---
 
-Created packages:
+## System Roles
 
-model
+The system supports the following user roles:
 
-gui
+- Manager
+- Administrator
+- Instructor
+- Student
+- Facilities Officer
+- Attendance Officer
 
-service
+Each role is provided with different permissions and system functionality.
 
-filehandling
+---
 
-reports
+## Object-Oriented Design
 
-4. Model Classes Created
+### Base Class
 
-Created the following classes:
-
-User Classes
-
+```java
 User
+```
 
-Manager
+### Inheritance Structure
 
-Administrator
-
-Instructor
-
-Student
-
-FacilitiesOfficer
-
-AttendanceOfficer
-
-System Classes
-
-Booking
-
-Payment
-
-Attendance
-
-Rating
-
-Equipment
-
-FacilityIssue
-
-ClassSchedule
-
-Purpose:
-
-These represent the main business objects of the SDAMS system.
-
-5. GUI Classes Created
-
-Created placeholder GUI classes:
-
-LoginForm
-
-ManagerMenu
-
-AdminMenu
-
-StudentMenu
-
-InstructorMenu
-
-FacilitiesMenu
-
-AttendanceMenu
-
-No Swing implementation yet.
-
-6. Service Classes Created
-
-Created:
-
-UserService
-
-BookingService
-
-PaymentService
-
-AttendanceService
-
-EquipmentService
-
-Currently skeleton classes only.
-
-7. File Handling Layer Created
-
-Created:
-
-FileManager.java
-
-Planned responsibilities:
-
-saveUser()
-
-readUsers()
-
-updateUser()
-
-deleteUser()
-
-Implementation not yet started.
-
-Git Knowledge Learned
-
-Important commands:
-
-Get latest updates
-
-git pull
-
-View changes
-
-git status
-
-Stage files
-
-git add .
-
-Commit
-
-git commit -m "Meaningful message"
-
-Push
-
-git push
-
-View history
-
-git log --oneline
-
-Team Git Workflow Agreed
-
-Before coding:
-
-git pull
-
-After completing a task:
-
-git add .
-
-git commit -m "Task completed"
-
-git push
-
-Example:
-
-git commit -m "Added Student class"
-
-OOP Design Direction
-Base Class
-
+```text
 User
-
-Planned attributes:
-
-userId
-
-username
-
-password
-
-name
-
-role
-
-Inheritance Structure
-
-User
-
 │
-
 ├── Manager
-
 ├── Administrator
-
 ├── Instructor
-
 ├── Student
-
 ├── FacilitiesOfficer
-
 └── AttendanceOfficer
+```
 
-Purpose:
+### OOP Concepts Applied
 
-Demonstrates:
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
 
-Encapsulation
-Inheritance
-Polymorphism
-Abstraction
+---
 
-Required by assignment.
+## Main Classes
 
-Getters and Setters Learned
+### User Classes
 
-Example:
+- User
+- Manager
+- Administrator
+- Instructor
+- Student
+- FacilitiesOfficer
+- AttendanceOfficer
 
-private String username;
+### System Classes
 
-public String getUsername() {
+- Booking
+- Payment
+- Attendance
+- Rating
+- Equipment
+- FacilityIssue
+- ClassSchedule
 
-return username;
+---
 
-}
+## GUI Components
 
-public void setUsername(String username) {
+Current GUI class structure:
 
-this.username = username;
+- LoginForm
+- ManagerMenu
+- AdminMenu
+- StudentMenu
+- InstructorMenu
+- FacilitiesMenu
+- AttendanceMenu
 
-}
+Java Swing implementation will be added during later development stages.
 
-NetBeans shortcut:
+---
 
-Alt + Insert
+## Service Layer
 
-Then:
+Current service classes include:
 
-Getter and Setter
+- UserService
+- BookingService
+- PaymentService
+- AttendanceService
+- EquipmentService
 
-Data Storage Design
+These classes handle the business logic of the application.
 
-Planned file structure:
+---
 
-users.txt
+## File Management
 
-Example:
+The project uses a text-file-based storage approach.
 
-M001,manager1,1234,Ali,Manager
+### FileManager Responsibilities
 
-A001,admin1,1234,Ahmad,Administrator
+- Save records
+- Read records
+- Update records
+- Delete records
 
-S001,student1,1234,Sarah,Student
+Planned methods:
 
-I001,instructor1,1234,David,Instructor
+```java
+saveUser()
+readUsers()
+updateUser()
+deleteUser()
+```
 
-Format:
+---
 
+## User Data Format
+
+Users are stored in `users.txt` using the following format:
+
+```text
 ID,USERNAME,PASSWORD,NAME,ROLE
+```
 
-Documentation Progress
+Example:
 
-Created documentation structure concept.
+```text
+M001,manager1,1234,Ali,Manager
+A001,admin1,1234,Ahmad,Administrator
+S001,student1,1234,Sarah,Student
+I001,instructor1,1234,David,Instructor
+```
 
-Planned report sections:
+---
 
-1. Cover Page
+## Git Workflow
 
-2. Table of Contents
+Before starting work:
 
-3. Introduction
+```bash
+git pull
+```
 
-4. Objectives
+Check project status:
 
-5. Problem Statement
+```bash
+git status
+```
 
-6. Scope
+Stage changes:
 
-7. Functional Requirements
+```bash
+git add .
+```
 
-8. Non-Functional Requirements
+Commit changes:
 
-9. Use Case Diagram
+```bash
+git commit -m "Meaningful commit message"
+```
 
-10. Class Diagram
+Push changes:
 
-11. System Design
+```bash
+git push
+```
 
-12. Implementation
+View commit history:
 
-13. Testing
+```bash
+git log --oneline
+```
 
-14. Conclusion
+---
 
-Current recommendation:
+## Current Progress (Week 1)
 
-Start writing documentation from Week 1 instead of waiting until Week 6.
+### Completed
 
-UML Plan
+✅ GitHub repository setup
 
-Need to create:
+✅ Local repository configuration
 
-Use Case Diagram
+✅ Project folder structure
 
-Actors:
+✅ Package creation
 
-Manager
+✅ Model class skeletons
 
-Administrator
+✅ GUI class skeletons
 
-Instructor
+✅ Service class skeletons
 
-Student
-
-Facilities Officer
-
-Attendance Officer
-
-Class Diagram
-
-First version:
-
-User
-
-│
-
-┌────────────────┼────────────────┐
-
-│                │                │
-
-Manager    Administrator    Instructor
-
-                                  │
-
-                               Student
-
-│
-
-FacilitiesOfficer
-
-│
-
-AttendanceOfficer
-
-
-
-
-Current Status
-
-Completed:
-
-✅ Repository setup
-
-✅ GitHub connection
-
-✅ Initial commits
-
-✅ Package structure
-
-✅ Class skeleton structure
-
-✅ Data folder structure
+✅ Data file structure
 
 ✅ Documentation planning
 
-✅ Understanding of Git workflow
+✅ UML planning
 
-✅ Understanding of getters/setters
+✅ Git workflow implementation
 
-✅ Understanding of inheritance design
+---
 
-Immediate Next Tasks
-Task 1
+## Week 1 Deliverables
 
-Finish User.java
+- User hierarchy completed
+- Project structure created
+- Initial class skeletons created
+- File storage structure prepared
+- GitHub repository configured
+- Documentation framework planned
 
-Add:
+---
 
-private String userId;
+## Week 2 Development Plan
 
-private String username;
+The next phase focuses on the Login and Authentication Module.
 
-private String password;
+### Features to Implement
 
-private String name;
+- Login system
+- User authentication
+- Read users from users.txt
+- Credential validation
+- Role-based access control
+- Menu redirection based on user role
 
-private String role;
+This module will serve as the foundation for all remaining SDAMS features.
 
-Generate:
+---
 
-Constructor
-Getters
-Setters
-Task 2
+## Team Repository
 
-Make user role classes inherit from User:
+Repository Link:
 
-public class Student extends User {
+https://github.com/greenpandas/SDAMS
 
-}
+---
 
-Repeat for all role classes.
+## Authors
 
-Task 3
+Self Defence Academy Management System (SDAMS)
 
-Created first UML Class Diagram in Draw.io.
-
-Save inside:
-
-diagrams/
-
-Task 4
-
-Created FileManager method skeleton:
-
-saveUser()
-
-readUsers()
-
-updateUser()
-
-deleteUser()
-
-Task 5
-
-Created report skeleton document inside:
-
-docs/
-
-With all report section headings.
-
-Week 1 Goal
-
-By end of Week 1:
-
-✅ User hierarchy complete
-
-✅ UML draft complete
-
-✅ FileManager skeleton complete
-
-✅ Documentation skeleton complete
-
-✅ Everything committed and pushed to GitHub
-
-Planned Week 2
-
-Focus on:
-
-Login System
-
-User Authentication
-
-Reading users from users.txt
-
-Role-based access
-
-Everything else in the project will depend on the login system.
+Developed as an academic group project using Java, NetBeans, Git, and Object-Oriented Programming principles.
