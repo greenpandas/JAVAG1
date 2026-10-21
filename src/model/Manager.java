@@ -1,7 +1,7 @@
 
 package model;
 
-public class Manager {
+public class Manager extends User {
     private String managerId;
 
 }

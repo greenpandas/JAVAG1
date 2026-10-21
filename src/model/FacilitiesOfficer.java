@@ -1,6 +1,6 @@
 
 package model;
 
-public class FacilitiesOfficer {
+public class FacilitiesOfficer extends User {
     private String officerId;
 }

@@ -1,7 +1,7 @@
 
 package model;
 
-public class Student {
+public class Student extends User {
     private String studentId;
     private String beltLevel;
     
