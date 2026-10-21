@@ -1,5 +1,3 @@
-# Self Defence Academy Management System (SDAMS)
-
 ## Team Members
 - Shaheer
 - Loai
