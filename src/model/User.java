@@ -5,6 +5,23 @@ public class User {
     private String username;
     private String password;
     private String name;
+    private String role;
+
+    public User(String userId, String username, String password, String name, String role) {
+        this.userId = userId;
+        this.username = username;
+        this.password = password;
+        this.name = name;
+        this.role = role;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 
     public String getUserId() {
         return userId;
@@ -48,5 +65,5 @@ public class User {
         this.name = name;
     }
 
-    // Generated getters and setters
+    // Generated getters and setters and constructors
 }
